@@ -2,6 +2,8 @@
 #include <ncurses.h> 
 #include <string.h>
 #include <thread>
+
+
 #define MAX_SCORE__EASY    10
 #define MAX_SCORE__MEDIUM  15
 #define MAX_SCORE__HARD    20
@@ -37,7 +39,7 @@ public:
         noecho();    
         curs_set(0); 
 
-        timeout(snake_speed /*150 ms*/); // wait for input 
+        timeout(snake_speed); // wait for input 
         keypad(stdscr, FALSE);
 
         xyfurit = get_furit();
