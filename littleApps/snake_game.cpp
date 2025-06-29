@@ -1,5 +1,5 @@
 #include <iostream>
-#include <ncurses.h> // for getch()
+#include <ncurses.h> 
 #include <string.h>
 #include <thread>
 #define MAX_SCORE__EASY    10
