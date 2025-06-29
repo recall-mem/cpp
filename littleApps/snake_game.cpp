@@ -72,7 +72,10 @@ public:
             if(score >= max_score) {
                 mvprintw(h+4, 0, "\n/////YOU WIN/////\n");
                 refresh();
-                std::this_thread::sleep_for(std::chrono::seconds(5));
+                timeout(-1);
+                printw("Press any key to exit");
+                timeout(-1);
+                getch();
                 break;
             }
         }
